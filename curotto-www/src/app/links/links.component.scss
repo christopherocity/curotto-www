@@ -1,0 +1,36 @@
+$iconsize: 140px;
+$cymbidium: #b3c33a;
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  background: #333;
+}
+
+.icons {
+  width: 800px;
+  margin: 60px auto 0;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.icon{
+  width: $iconsize;
+  height: $iconsize;
+  padding: 10px;
+  fill: rgba($cymbidium, 0);
+  stroke: $cymbidium;
+  stroke-width: 2px;
+  transition: all 0.25s ease;
+  &:hover, &:focus {
+    fill: $cymbidium;
+    transition: all 0.15s ease;
+  }
+}
